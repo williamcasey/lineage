@@ -5,7 +5,7 @@ Algorithm for determining the genealogical relationship (consanguinity) between 
 
 This algorithm was created with one purpose in mind: to find the relation between one person to another person within a family tree. For example, if _person a_ was born two generations before _person b_ in a family tree, and _person a_ is _person b's_ direct ancestor, then _person a_ is _person b's_ grandparent. I have a working example of this algorithm with my own family [here](http://tree.wccasey.com/). When designing this algorithm, I followed the relationships outlined in this table of consanguinity from [Wikipedia](https://en.wikipedia.org/wiki/Consanguinity):
 
-![](https://upload.wikimedia.org/wikipedia/commons/0/0d/Table_of_Consanguinity_showing_degrees_of_relationship.svg)
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Table_of_Consanguinity_showing_degrees_of_relationship.svg" width="550"/></p>
 
 ### Preface
 
