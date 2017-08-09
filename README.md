@@ -50,13 +50,13 @@ General Definitions:
 
     The member in the tree from which the rest of the tree stems from.
 
-The following are the dataset definitions, or the information each node needs to have and others information that can be added. Required fields are in red:
+The following are the dataset definitions, or the information each node needs to have and others information that can be added. Necessary fields are underlines:
 
-*   **<font color="#FF0000">ID</font>**
+*   _**ID**_
 
     Each member needs to have a unique ID. The root ancestor always needs to have their ID set to 1.
 
-*   **<font color="#FF0000">Parent ID</font>**
+*   _**Parent ID**_
 
     Each member also needs to have a Parent ID, which makes up the hierarchy within the tree. The root ancestor's Parent ID needs to be set to 0, as they have no parent in the tree.
 
