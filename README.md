@@ -50,7 +50,7 @@ General Definitions:
 
     The member in the tree from which the rest of the tree stems from.
 
-The following are the dataset definitions, or the information each node needs to have and others information that can be added. Necessary fields are underlines:
+The following are the dataset definitions, or the information each node needs to have and others information that can be added. Necessary fields are in italics:
 
 *   _**ID**_
 
