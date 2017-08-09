@@ -11,31 +11,24 @@ This algorithm was created with one purpose in mind: to find the relation betwee
 
 In it's simplest form, this algorithm's dataset consists of members that make up a family tree, each with a unique id and the id of their parent. The family tree needs to have a root ancestor, which the tree will stem down from. The root ancestor needs to have an id of 1 and it's parent id is to be set to 0, as it has no parent within the dataset. In any practical implementation, it would be wise to give each member a name, like below. An example dataset with 6 members:
 
-<div class="col">
+<table>
+<tr><td><b>Name</b></td><td><b>ID</b></td><td><b>Parent ID</b></td></tr>
+<tr><td>John Doe (root)</td><td>1</td><td>0</td></tr>
+<tr><td>Mary Doe</td><td>2</td><td>1</td></tr>
+<tr><td>Jane Doe</td><td>3</td><td>1</td></tr>
+<tr><td>Bob Doe</td><td>4</td><td>1</td></tr>
+<tr><td>Jerry Doe</td><td>5</td><td>4</td></tr>
+<tr><td>Robert Doe</td><td>6</td><td>4</td></tr>
+</table>
 
-<div class="col_one">
+<b>Tree Hierarchy</b><br />
+John Doe - 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mary Doe - 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jane Doe - 3<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bob Doe - 4<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robert Doe - 5<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jerry Doe - 6<br />
 
-| **Name** | **ID** | **Parent ID** |
-| John Doe (root) | 1 | 0 |
-| Mary Doe | 2 | 1 |
-| Jane Doe | 3 | 1 |
-| Bob Doe | 4 | 1 |
-| Jerry Doe | 5 | 4 |
-| Robert Doe | 6 | 4 |
-
-</div>
-
-<div class="col_two">**Tree Hierarchy:**
-
-<span style="border-left: 2px solid #000; padding-left: 7px;">John Doe - 1</span>
-<span style="border-left: 2px solid #000; padding-left: 7px;">Mary Doe - 2</span>
-<span style="border-left: 2px solid #000; padding-left: 7px;">Jane Doe - 3</span>
-<span style="border-left: 2px solid #000; padding-left: 7px;">Bob Doe - 4</span>
-<span style="border-left: 2px solid #000; padding-left: 7px;">Robert Doe - 5</span>
-<span style="border-left: 2px solid #000; padding-left: 7px;">Jerry Doe - 6</span>
-</div>
-
-</div>
 
 In the above example, there are 3 generations, with John Doe having 3 children and 2 grandchildren. Generation 1 always has only one member, the root ancestor. All of the root ancestor's children are in generation 2, the root ancestor's grandchildren are in generation 3, and so on.
 
