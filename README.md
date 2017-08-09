@@ -17,17 +17,17 @@ In it's simplest form, this algorithm's dataset consists of members that make up
 <tr><td>Mary Doe</td><td>2</td><td>1</td></tr>
 <tr><td>Jane Doe</td><td>3</td><td>1</td></tr>
 <tr><td>Bob Doe</td><td>4</td><td>1</td></tr>
-<tr><td>Jerry Doe</td><td>5</td><td>4</td></tr>
-<tr><td>Robert Doe</td><td>6</td><td>4</td></tr>
+<tr><td>Robert Doe</td><td>5</td><td>2</td></tr>
+<tr><td>Betty Doe</td><td>6</td><td>4</td></tr>
 </table>
 
 <b>Tree Hierarchy</b><br />
 John Doe - 1<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mary Doe - 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robert Doe - 5<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jane Doe - 3<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bob Doe - 4<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robert Doe - 5<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jerry Doe - 6<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Betty Doe - 6<br />
 
 
 In the above example, there are 3 generations, with John Doe having 3 children and 2 grandchildren. Generation 1 always has only one member, the root ancestor. All of the root ancestor's children are in generation 2, the root ancestor's grandchildren are in generation 3, and so on.
